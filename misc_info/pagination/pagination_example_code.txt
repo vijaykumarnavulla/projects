@@ -1,0 +1,65 @@
+const ITEM_PER_PGE = 2;
+const PAGINATION_BUTTONS = 5;
+const PREVIOUS = 'P';
+cosnt NEXT = 'n';
+
+function onFetchDocumentList(){
+    ...rest call
+    $scope.documetList = res;
+    $scope.totalItems = res.length;
+    $scope.pageArr = [];
+    $scope.pageItems = [];
+    $scope.onNextButtonClick();
+    $scope.onShowCurrentPage();
+}
+
+$scope.onNextButtonClick = function(){
+    var arr = [PREVIOUS],cnt = 0;
+    var currentIndex = ($scope.pageArr[$scope.pageArr.length -2]||0)+1;
+    if(currentIndex * ITEM_PER_PGE >= $scope.totalItems &&
+	(currentIndex * ITEM_PER_PAGE - $scope.totalItems) > ITEM_PER_PAGE)
+        return;
+	
+     if(currentIndex * ITEM_PER_PGE >= $scope.totalItems &&
+	(currentIndex * ITEM_PER_PAGE - $scope.totalItems) < ITEM_PER_PAGE) {
+	arr.push(currentIndex);
+	arr.push(NEXT);
+	$scope.pageArr = arr;
+	return;
+	}
+    for(let i = currentIndex; i * ITEM_PER_PGE < $scope.totalItems; i++,cnt++){
+        if(cnt === PAGINATION_BUTTONS)
+            break;
+        arr.push(i);    
+    }
+    if(cnt !== PAGINATION_BUTTONS && arr[arr.length-1]*ITEM_PER_PGE < $scope.totalItems) {
+        arr.push(arr[arr.length-1]+1);
+    }
+    arr.push(NEXT);
+    $scope.pageArr = arr;
+}
+
+$scope.onPreviousButtonClick = function(){
+    var cnt = PAGINATION_BUTTONS, tmpArr=[],end=0;
+    end = $scope.pageArr[1];
+    if(end <= 1) return;
+    while(cnt){
+        end = end - 1;
+        tmpArr.push(end);
+        cnt = cnt -1;
+    }
+    tmpArr = tmpArr.reverse();
+    tmpArr.push(NEXT);
+    tmpArr.unshift(PREVIOUS);
+    $scope.pageArr = tmpArr;
+}
+
+$scope.onShowCurrentPage = function(pageNum = 1){
+    $scope.pageItems = [];
+    var index = (pageNum -1)*ITEM_PER_PGE;
+    for(let i = index,cnt=1;
+        i < $scope.documetList.length && cnt <= ITEM_PER_PGE;
+        i++,cnt++){
+            $scope.pageItems.push($scope.documetList[i]);
+        }
+}

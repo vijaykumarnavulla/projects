@@ -1,0 +1,22 @@
+function alphaNumericSort(a, b){
+
+  if(a.length > b.length){
+   return 1;
+   }
+   if(a.length < b.length){
+    return -1;
+	}
+	a = a.replace(/[' ']/g,'');
+	b = b.replace(/[' ']/g,'');
+	let tmpa,tmpb;
+	tmpa = a.replace(/[0-9]/g,'');
+	tmpb = b.replace(/[0-9]/g,'');
+	if(tmpa === tmpb){
+	  a = a.replace(/[^0-9]/,'');
+	  b = b.replace(/[^0-9]/,'');
+	  return a - b;
+	  
+	} else {
+	return tmpa < tmpb;
+	}
+}

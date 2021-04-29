@@ -1,0 +1,22 @@
+
+<div class="parent-div">
+	
+<header>  
+		
+	<header-cmp (menuClick)="drawer.toggle()"></header-cmp>	
+</header> 
+
+<section>
+		<mat-drawer-container class="example-container" autosize appColor #parent [parentDiv]="parent">
+				<mat-drawer #drawer class="example-sidenav" 
+				[opened]="isMatDrawerOpen" mode="side">   
+						<navigation-cmp (menuHideClick)="drawer.opened = false;"></navigation-cmp>
+				</mat-drawer>
+				<article (click)="drawer.opened = false;">
+						<router-outlet></router-outlet>			
+				</article>
+		</mat-drawer-container>	
+</section>
+
+
+</div>

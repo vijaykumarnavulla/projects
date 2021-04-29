@@ -1,0 +1,128 @@
+<form [formGroup]="profileForm" (ngSubmit)="onSubmit()">
+    <label>
+      First Name:
+      <input type="text" formControlName="firstName" required>
+    </label>
+
+    <!-- <span class="help-block" *ngIf="!SignupForm.get('userData.username').valid&&SignupFo0rm.get('userData.username').touched"> -->
+        <!-- <span *ngIf = "profileForm.get('firstName').invalid">name is invalid</span> -->
+        <span 
+        *ngIf = "profileForm.get('firstName').invalid && (profileForm.get('firstName').dirty || profileForm.get('firstName').touched)">
+        name is invalid</span>
+        <!-- <span *ngIf = "SignupForm.get('userData.username').errors['required']">field is required</span> -->
+      <!-- </span> -->
+
+
+      <label for="lastName">
+      Last Name:
+      <input type="text" id="lastName" formControlName="lastName" required>
+    </label>
+<div *ngIf = "profileForm.get('lastName').invalid && 
+(profileForm.get('lastName').dirty || profileForm.get('lastName').touched)">
+<div *ngIf="profileForm.get('lastName').errors.required">
+    Name is required.
+  </div>
+  <div *ngIf="profileForm.get('lastName').errors.minlength">
+    Name must be at least 2 characters long.
+  </div>
+  <div *ngIf="profileForm.get('lastName').errors.pattern">
+    Name pattern error
+  </div>
+
+</div>  
+    <div formGroupName="address">
+      <h3>Address</h3>
+  
+      <label>
+        Street:
+        <input type="text" formControlName="street">
+      </label>
+  
+      <label>
+        City:
+        <input type="text" formControlName="city">
+      </label>
+      
+      <label>
+        State:
+        <input type="text" formControlName="state">
+      </label>
+  
+      <label>
+        Zip Code:
+        <input type="text" formControlName="zip">
+      </label>
+    </div>
+  
+    <!-- <div formArrayName="comp"> -->
+      <h3>Aliases</h3> <button (click)="addAlias()">Add Alias</button>
+      <div formArrayName="comp">
+          <div *ngFor="let comp of profileForm.get('comp').controls; let i=index">
+              <!-- The repeated alias template -->
+              <div [formGroupName]="i">
+                <input type="text" formControlName="company" pattern="[a-zA-Z ]*" required>
+                <br>
+                <span> is Company Valid {{ profileForm.controls.comp.controls[i].controls.company.valid }}</span>
+                <br>
+                <input type="text" formControlName="tempar">
+
+                <div *ngIf = "onGetReferecControl(i,'tempar','invalid') && 
+                (onGetReferecControl(i,'tempar','dirty') || onGetReferecControl(i,'tempar','touched'))">
+                    <div *ngIf="onGetReferecControl(i,'tempar','errors').required">
+                        Name is required.
+                      </div>
+                      <div *ngIf="onGetReferecControl(i,'tempar','errors').minlength">
+                        Name must be at least 2 characters long.
+                      </div>
+                      <div *ngIf="onGetReferecControl(i,'tempar','errors').pattern">
+                        Name pattern error
+              </div>
+      </div>
+              
+                <br>
+                <span *ngIf = "profileForm.get('comp').invalid">is Comp invalid</span>
+                <br>
+
+                <br>            <span (click)="deleteProject(profileForm.get('comp'),i)">delete object</span>
+                <br> </div>
+            </div>
+      </div>
+     
+    <!-- </div> -->
+  
+    <button type="submit" [disabled]="!profileForm.valid">Submit</button>
+
+
+      </form>
+  <!-- </form> -->
+  
+  <hr>
+  
+  
+  <p>
+    Form Value: {{ profileForm.value | json }}
+  </p>
+  
+  
+  <p>
+    Form Status: {{ profileForm.status }}
+  </p>
+  
+  <p>
+    <button (click)="updateProfile()">Update Profile</button>
+  </p>
+  
+  <p>
+    <button (click)="addNewProject(profileForm.get('comp').controls)">add Profile</button>
+  </p>
+
+  <p>
+    <button (click)="reset()">reset</button>
+  </p>
+  
+  
+  <!-- 
+  Copyright 2017-2018 Google Inc. All Rights Reserved.
+  Use of this source code is governed by an MIT-style license that
+  can be found in the LICENSE file at http://angular.io/license
+  -->

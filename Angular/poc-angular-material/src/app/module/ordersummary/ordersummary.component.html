@@ -1,0 +1,221 @@
+<div class="content" [appColor]="'#33444A'">
+  <div fxLayout="column" fxLayoutGap="20px">
+    <h6>Home &gt; Order entry/Maintenance</h6>
+    <mat-expansion-panel [expanded]="true">
+      <mat-expansion-panel-header>
+        <mat-panel-title>
+          <h4>Order Details</h4>
+        </mat-panel-title>
+      </mat-expansion-panel-header>
+      <app-order-details></app-order-details>
+    </mat-expansion-panel>
+    <mat-expansion-panel [expanded]="step === 0" (opened)="setStep(0)">
+      <mat-expansion-panel-header>
+        <mat-panel-title>
+          <h4>orders</h4>
+        </mat-panel-title>
+      </mat-expansion-panel-header>
+      <div class="content_area">
+        <div class="orderDetailsHeader" fxLayout="row">
+          <!-- <div class="orderDetail-serial" fxFlex="50">Showing 1-50 of 326</div> -->
+          <div class="orderDetail-search" fxLayout="row" fxFlex="100">
+           <!-- <div class="div-pages">Showing 1-50 of 326</div>-->
+
+            <div class="div-pages">Showing {{recordStartValue}}-{{recordsCount}} of {{totalRecrods}}</div>
+            <div class="div-pages">
+              <span class="fa fa-angle-left pagination-icon" (click)="prevStep()"></span>&nbsp;&nbsp;
+              <span class="fa fa-angle-right pagination-icon" (click)="nextStep()"></span>
+            </div>
+
+
+            <div fxLayout="row" fxFlex="100" fxLayoutAlign="end center" fxLayoutGap="10px"
+            id="div-select">
+                <mat-form-field class="mat-field-sort" >
+                    <mat-label>Sort By</mat-label>
+                    <mat-select [(value)]="selected">
+                      <mat-option>Sort By</mat-option>
+                      <ng-container *ngFor="let obj of sortOptions">
+                          <mat-option value="obj.value" (click)="sortArray(obj.value)">{{obj.label}}</mat-option>
+                      </ng-container>
+                    </mat-select>
+                  </mat-form-field>
+                  <div fxLayout="row" fxFlex="100" class="div-row-serarch"
+                  [ngClass]="{'search-focus-div':isInputFocus}">
+                    <div class="search-div">
+      
+                    </div>
+                      <input
+                    type="text"
+                    class="inputCls-search"
+                    placeholder=" Search" [(ngModel)]="searchStr"
+                    (focus)="isInputFocus = true" (blur)="isInputFocus = false"
+                  (change)="searchInList(searchStr)">
+                  </div>
+            </div>            
+          </div>
+        </div>
+        <div class="orderDetails">
+          <div class="orderDetailFormTable">
+            <ul *ngFor="let ordersummary of currentOrderSummary|searchOrders:searchStr;">                           
+              <li class="summaryliImg">
+                  <img src="{{ordersummary.imgpath}}" />
+                </li>
+              <li class="summaryli">
+                <span class="spanHead">Ln</span><br />
+                <span class="spanContent">{{ ordersummary.ln }}</span>
+              </li>
+              <li class="summaryli">
+                <span class="spanHead">Qty</span><br />
+                <span class="spanContent"><input type="text" class="tableInput" value="{{ ordersummary.qty }}"/></span>
+              </li>
+              <li class="summaryli">
+                <span class="spanHead">SKU</span><br />
+                <span class="spanContent">{{ ordersummary.sku }}</span>
+              </li>
+              <li class="summaryli">
+                <span class="spanHead">VSN</span><br />
+                <span class="spanContent">{{ ordersummary.vsn }}</span>
+              </li>
+              <li class="summaryli">
+                <span class="spanHead">Description</span><br />
+                <span class="spanContent">{{ ordersummary.Description }}</span>
+              </li>              
+              <li class="summaryli">
+                <span class="spanHead">Store</span><br />
+                <span class="spanContent"><input type="text" class="tableInput" value="{{ ordersummary.store }}"/></span>
+              </li>
+              <li class="summaryli">
+                <span class="spanHead">Location</span><br />
+                <span class="spanContent"><input type="text" class="tableInput" value="{{ ordersummary.location }}"/></span>
+              </li>
+              <li class="summaryli">
+                <span class="spanHead">Rental</span><br />
+                <span class="spanContent"><input type="text" class="tableInput" value="{{ ordersummary.rental }}"/></span>
+              </li>
+              <li class="summaryli">
+                <span class="spanHead">Extended</span><br />
+                <span class="spanContent">{{ ordersummary.extended }}</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </mat-expansion-panel>
+    <mat-expansion-panel
+      (opened)="panelOpenState = true"
+      (closed)="panelOpenState = false"
+    >
+      <mat-expansion-panel-header>
+        <mat-panel-title>
+          <h4>Additional Information</h4>
+        </mat-panel-title>
+      </mat-expansion-panel-header>
+      <div class="content_area">
+        <div class="additionalInfoTab">
+          <div fxLayout="row">
+            <mat-tab-group
+              fxFlex="100"
+              style="position: relative;widows: 100%;"
+            >
+              <mat-tab label="PAYMENTS" #payments fxFlex="20">
+                <form class="additionalInfoForm">
+                  <mat-form-field class="payment">
+                    <input matInput placeholder="Payment Type" value="Netbanking" />
+                  </mat-form-field>
+                  <mat-form-field class="payment">
+                    <input matInput placeholder="Amount" value="$142.86" />
+                  </mat-form-field>
+                </form>
+              </mat-tab>
+              <mat-tab label="COMMENTS" fxFlex="20">
+                <p class="tabPara">
+                  Lorem ipsum, or lipsum as it is sometimes known, is dummy text
+                  used in laying out print, graphic or web designs. ... The
+                  purpose of lorem ipsum is to create a natural looking block of
+                  text (sentence, paragraph, page, etc.) that doesn't distract
+                  from the layout.
+                </p>
+                <p class="tabPara">
+                  Lorem ipsum, or lipsum as it is sometimes known, is dummy text
+                  used in laying out print, graphic or web designs. ... The
+                  purpose of lorem ipsum is to create a natural looking block of
+                  text (sentence, paragraph, page, etc.) that doesn't distract
+                  from the layout.
+                </p>
+                <p class="tabPara">
+                  Lorem ipsum, or lipsum as it is sometimes known, is dummy text
+                  used in laying out print, graphic or web designs. ... The
+                  purpose of lorem ipsum is to create a natural looking block of
+                  text (sentence, paragraph, page, etc.) that doesn't distract
+                  from the layout.
+                </p>
+              </mat-tab>
+              <mat-tab label="DISCOUNTS" fxFlex="20">
+                <p class="tabPara">
+                  Lorem ipsum, or lipsum as it is sometimes known, is dummy text
+                  used in laying out print, graphic or web designs. ... The
+                  purpose of lorem ipsum is to create a natural looking block of
+                  text (sentence, paragraph, page, etc.) that doesn't distract
+                  from the layout.
+                </p>
+              </mat-tab>
+              <mat-tab label="USER DEFINED" fxFlex="20">
+                <p class="tabPara">
+                  Lorem ipsum, or lipsum as it is sometimes known, is dummy text
+                  used in laying out print, graphic or web designs. ... The
+                  purpose of lorem ipsum is to create a natural looking block of
+                  text (sentence, paragraph, page, etc.) that doesn't distract
+                  from the layout.
+                </p>
+                <p class="tabPara">
+                  Lorem ipsum, or lipsum as it is sometimes known, is dummy text
+                  used in laying out print, graphic or web designs. ... The
+                  purpose of lorem ipsum is to create a natural looking block of
+                  text (sentence, paragraph, page, etc.) that doesn't distract
+                  from the layout.
+                </p>
+              </mat-tab>
+              <mat-tab label="MARKETING" fxFlex="20">
+                <p class="tabPara">
+                  Lorem ipsum, or lipsum as it is sometimes known, is dummy text
+                  used in laying out print, graphic or web designs. ... The
+                  purpose of lorem ipsum is to create a natural looking block of
+                  text (sentence, paragraph, page, etc.) that doesn't distract
+                  from the layout.
+                </p>
+              </mat-tab>
+            </mat-tab-group>
+          </div>
+        </div>
+        <div class="additionalInfoBtns">
+          <form class="additionalInfoForm">
+            <mat-form-field class="example-full-width">
+              <input matInput placeholder="Sub Total" readonly value="129.87" />
+            </mat-form-field>
+            <mat-form-field class="example-full-width">
+              <input matInput placeholder="Delivery Charges" value="0.0" />
+            </mat-form-field>
+            <mat-form-field class="example-full-width">
+              <input matInput placeholder="Setup Charge" value="0.0" />
+            </mat-form-field>
+            <mat-form-field class="example-full-width">
+              <input matInput placeholder="Tax Charges" class="taxCharges" readonly value="12.99" />
+            </mat-form-field>
+            <mat-form-field class="example-full-width">
+              <input matInput placeholder="Grand Total" readonly value="$142.86" />
+            </mat-form-field>
+            <mat-form-field class="example-full-width">
+              <input matInput placeholder="Payments" readonly value="$142.86" />
+            </mat-form-field>
+            <mat-form-field class="example-full-width">
+              <input matInput placeholder="Balance Due" readonly value="$0.0" />
+            </mat-form-field>
+            <mat-form-field class="example-full-width">
+              <input matInput placeholder="Financed Amount" readonly value="$0.0" />
+            </mat-form-field>
+          </form>
+        </div>
+      </div>
+    </mat-expansion-panel>
+  </div>
+</div>

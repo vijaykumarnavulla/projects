@@ -1,0 +1,18 @@
+Hamerjs for mobile finger tips like swapping.
+
+threejs for 3d camer devs.
+
+tensorflow for camer detection and hand movements.
+Facemesh  and Handpose new library.	
+
+handtrackingjs for fingers detection.
+
+Babylon.js web based 3d for need to do r & d.
+
+Panolens.js for on top of three.js/polyhedron
+
+https://fireship.io/lessons/tensorflow-js-quick-start/
+
+https://blog.tensorflow.org/search?label=TensorFlow+Core&max-results=20
+
+https://www.ma-no.org/en/programming/easy-face-and-hand-tracking-browser-detection-with-tensorflow-js-ai-and-mediapipe
