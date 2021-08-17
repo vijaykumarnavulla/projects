@@ -1,0 +1,9 @@
+$VNetName = "sl-vnet-pshell"
+$rg = "az-vkn-res"
+$VNETAdressSpace ="10.0.0.0/22"
+$subnteBAddressPrefix = "10.0.1.0/24"
+$location = "eastus"
+$subnetBName  = "SL-APP-1"
+$subnets = New-AzVirtualNetworkSubnetConfig -Name $subnetBName -AddressPrefix $subnteBAddressPrefix
+$vnet = New-AZVirtualNetwork -Name $VNetName -ResourceGroupName $rg -Location $location -AddressPrefix $VNETAdressSpace -Subnet $subnets
+Add-AzVirtualNetworkSubnetConfig -Name 'sl-app-0' -VirtualNetwork $vnet -AddressPrefix $subnteBAddressPrefix
