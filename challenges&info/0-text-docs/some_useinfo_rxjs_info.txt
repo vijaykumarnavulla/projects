@@ -1,0 +1,131 @@
+https://coryrylan.com/blog/theming-angular-apps-with-css-custom-properties
+
+ng g d timeNumber --module=../app.module.ts
+
+@keyframes
+
+compodoc -p tsconfig.json
+
+
+http://bit.ly/angular-flex-layout
+
+http://bit.ly/src-flex-layout-responsive
+
+http://github.com/amgular/flex-layout
+
+http://bit.ly/demo-flex-layout-responsive
+
+http://cssreference.io/flexbox/
+
+https://github.com/angular/flex-layout/wiki
+
+https://github.com/angular/flex-layout/projects/3
+
+
+
+Instead, we can simply choose the appropriate operator based on the use case:
+
+if we need to do things in sequence while waiting for completion, then concatMap is the right choice
+
+for doing things in parallel, mergeMap is the best option
+
+in case we need cancellation logic, switchMap is the way to go
+
+for ignoring new Observables while the current one is still ongoing, exhaustMap does just that
+
+As seen above ... an Observable is a stream of events or data. They are often returned from Angular methods, such as the http.get and the myinputBox.valueChanges.
+
+Subscribing "kicks off" the observable stream. Without a subscribe (or an async pipe) the stream won't start emitting values. It's similar to subscribing to a newspaper or magazine ... you won't start getting them until you subscribe.
+
+The subscribe method takes in an observer. An observer has three methods:
+
+The method to process each time an item is emitted from the observable.
+
+The method to process any error that occurs.
+
+The method to clean up anything when the observer completes. This last one is seldom used when working with Angular's observables.
+
+interval
+
+of
+
+fromevent
+
+subject
+
+behavioursubject
+
+replaysubject
+
+pipe
+
+tap
+
+map
+
+filter
+
+catchError
+
+retry(3)
+
+takeUntil
+
+
+$untouched The field has not been touched yet
+$touched The field has been touched
+$pristine The field has not been modified yet
+$dirty The field has been modified
+$invalid The field content is not valid
+$valid The field content is valid
+
+reactive forms
+
+formgroup, formbuilder .group, .array, updating value patchvalue, reset value formgroup.markAsPristine() and fromgroup.marsAsUntouched
+this.profileForm.value , setControl for array values,
+html: [formgroup],(ngOnSubmit), formcontrolname, formgroup.get('firstname').touched
+<div *ngIf = "profileForm.get('lastName').invalid && 
+(profileForm.get('lastName').dirty || profileForm.get('lastName').touched)">
+<div *ngIf="profileForm.get('lastName').errors.required">
+    Name is required.
+  </div>
+  <div *ngIf="profileForm.get('lastName').errors.minlength">
+    Name must be at least 2 characters long.
+  </div>
+  <div *ngIf="profileForm.get('lastName').errors.pattern">
+    Name pattern error
+  </div>
+
+</div>  
+
+
+primitive and non primitive
+
+
+code quality
+
+algorithams
+
+design patterns
+
+In detail Agile & scrum
+
+Nikhil Ganjoo
+
+
+
+Vija@y123456789
+
+9886218229  Nikhil Ganjoo
+
+ranjeet.mazumdar@mphasis.com
+
+
+vijaykumarnavulla@mphasis.com
+
+
+ng serve --extra-webpack-config webpack.partial.js -o
+
+ng build --extra-webpack-config webpack.config.js
+
+

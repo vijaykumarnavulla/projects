@@ -1,0 +1,151 @@
+function ismultiplier(num,mod){
+    let index = 0,remainder = 0;
+    if(num[0] === '-'){
+index =1;}
+for(let i = index ; i < num.length ; i++){
+remainder = (remainder * 10 + num[i])%mod
+}
+if(remainder === 0) return true;
+
+return false;
+}
+
+function decrementValue(value){
+    let decremntvalue = '';
+    for(let i = value.length -1 ; i >= 0 ; i--){
+        if(value[i] === "0"){
+            decremntvalue = decremntvalue + "9";
+        } else{
+            decremntvalue = parseInt(value[i]) -1+decremntvalue;
+            decremntvalue = value.substring(0,i)+decremntvalue;
+            break;
+        }
+}
+
+if(decremntvalue && decremntvalue[0] === "0"){
+decremntvalue = decremntvalue.substring(1,decremntvalue.length)}
+
+
+else if(decremntvalue && decremntvalue[0] === "-" && decremntvalue[1] === "0"){
+decremntvalue = "-"+decremntvalue.substring(2,decremntvalue.length);}
+
+return decremntvalue;
+
+}
+
+function compareTwoNumbers(num1,num2){ //10 , 12
+let antireverse = false;
+   if(num1.indexOf('-')!== -1 && num2.indexOf('-')!== -1){
+antireverse = true;}
+    num1 = num1.replace('-','');
+    num2 = num2.replace('-','');
+    if(num1.length > num2.length){
+       return {start:num2,end:num1};
+    }
+     if(num1.length < num2.length){
+         return {start:num1,end:num2};
+    }
+    for(let i = 0 ; i < num1.length ; i++){
+        if(num1[i] > num2[i]){
+             return {start:num2,end:num1};
+         }
+        if(num1[i] < num2[i]){ // 10 14
+            return {start:num1,end:num2};
+        }
+    }
+    return {start:num1,end:num2};
+}
+function compareStartEnd(start,end){
+//     possible combinations
+// - - , ++ , + - , - +
+//-12 -14,12 14,12 -13,-13 14
+
+// end -14, should be star -12 
+
+if(start[0]==='-' && end[0] ==='-'){
+    let obj = compareTwoNumbers(start,end);
+    return {start:'-'+obj.start,end:'-'+obj.end};
+}
+if(start[0]==='-' && end[0] !=='-'){ //-14 12
+     return {start:start,end:end};
+}
+if(start[0]!=='-' && end[0] ==='-'){ //12 -14
+     return {start:end,end:start};
+}
+    return compareTwoNumbers(start,end);
+}
+
+function printmultiplier(start,end,multi1,multi2,msg1,msg2){
+    let isReverse = false,modifiedEnd,modifiedStart;
+console.log(compareStartEnd(start,end));
+    let obj = compareStartEnd(start,end);
+    modifiedStart= obj.start ;
+    modifiedEnd= obj.end ;
+   
+    let arr = [];
+
+ 
+var clearIntevalId,setTimeoutId;
+
+setTimeoutId =  setTimeout(()=>{
+     clearInterval(clearIntevalId);
+     clearTimeout(setTimeoutId);
+     console.log('stack overflow happens');return;},2000);
+
+ clearIntevalId = setInterval(()=>{
+       let ismulti1 = false,ismulti2 = false;
+
+        if(ismultiplier(modifiedEnd,multi1) === true){
+            ismulti1 = true;
+        }
+        if(ismultiplier(modifiedEnd,multi2) === true){
+            ismulti2 = true;
+        }
+        if(ismulti1 && ismulti2){
+            arr.push(msg1+' '+msg2);
+        }
+        else if(ismulti1){
+            arr.push(msg1);
+        }
+        else if(ismulti2){
+            arr.push(msg2);
+        }else{
+            arr.push(modifiedEnd);
+        }
+        
+        if(modifiedStart === modifiedEnd) {
+            if(modifiedStart === start){
+                isReverse = true;
+            }else{
+                isReverse = false;
+            }
+            clearTimeout(setTimeoutId);
+            clearInterval(clearIntevalId);
+             if(isReverse){
+                arr = arr.reverse();
+            }
+            console.log(arr);return;
+        };
+        modifiedEnd = decrementValue(modifiedEnd);
+//         console.log(modifiedEnd);
+       
+ },10);
+
+
+   
+}
+
+// printmultiplier('10','20','4','5','msg1','msg2');
+// printmultiplier('12421342134213421342134234343','12421342134213421342134234353','4','5','msg1','msg2');
+// printmultiplier('-12421342134213421342134234343','-12421342134213421342134234353','4','5','msg1','msg2');
+
+// printmultiplier('-12421342134213421342134234363','-12421342134213421342134234253','4','5','msg1','msg2');
+
+printmultiplier('-4','-4','4','5','msg1','msg2');
+// printmultiplier('-112','-4','4','5','msg1','msg2');
+// printmultiplier('-1','-10','4','5','msg1','msg2');
+// var start,end,reverse;
+// {start,end,reverse} =compareStartEnd('10','12');
+// console.log(compareStartEnd('-120','-12'));
+
+// console.log('start: '+start+' end: '+end+' reverse:'+reverse);

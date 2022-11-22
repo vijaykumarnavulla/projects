@@ -1,0 +1,9 @@
+.info{
+    display:grid;
+    width: 100%;
+    height: 100%;
+}
+
+.center-block{
+    padding-left: 35%;
+}

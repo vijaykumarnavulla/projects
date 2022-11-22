@@ -1,0 +1,27 @@
+--- windows power shell --
+
+code --install-extension ms-vscode.powershell
+C:\Users\<yourusername>\.vscode\extensions\ms-vscode.PowerShell-<version>\examples
+
+Get-Module -Name Az -ListAvailable -OutVariable AzVersions
+
+set-ExecutionPolicy Unrestricted
+
+Set-ExecutionPolicy RemoteSigned 
+
+Uninstall-Module -Name Az 
+Install-Module AZ
+install-module -name azurerm -allowclobber
+
+
+Get-AzContext
+Clear-AzContext
+Connect-AzAccount
+
+Add-AzVirtualNetworkSubnetConfig -- test
+
+--- vs code extensions ---
+AZ-Tools
+powershell
+Pester Tests
+

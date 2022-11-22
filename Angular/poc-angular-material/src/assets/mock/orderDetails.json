@@ -1,0 +1,39 @@
+{
+    "details": [
+      {
+        "orderNumber": "1065465789",
+        "transactionType": "Sale",
+        "orderStatus": "Open",
+        "storeCode": "234",
+        "cashDrawer": "withdraw",
+        "salesPerson_1": "",
+        "salesPerson_2": ""
+        }
+    ],
+    "shippingInformation": [
+        {
+            "customerCode":"1321323",
+            "firstName":"",
+            "lastName":"",
+            "address_1":"",
+            "address_2":"",
+            "city":"",
+            "state":"",
+            "zipCode":"",
+            "phoneNumber":""
+          }
+      ],
+      "billingInformation": [
+        {
+            "firstName":"",
+            "lastName":"",
+            "address_1":"",
+            "address_2":"",
+            "city":"",
+            "state":"",
+            "zipCode":"",
+            "phoneNumber":""
+         
+          }
+      ]
+  }

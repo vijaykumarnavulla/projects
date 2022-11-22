@@ -1,0 +1,31 @@
+h4,h5{
+    color: white;
+    color: white;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    /* font-size: 16px !important; */
+    margin: auto;
+    margin-left: 0px;
+}
+
+.additionalInfoForm .mat-form-field{
+    width: 100% !important;
+  }
+
+  .mat-label-field{
+    background: #1F3138 !important;
+}
+.container-div{
+    padding: 20px;
+    background: #1F3138 !important;
+}
+  
+ ::ng-deep .mat-form-field-type-mat-select:not(.mat-form-field-disabled) .mat-form-field-flex {
+    background: transparent;
+  }
+
+ ::ng-deep .mat-select-value {
+    color: white;
+}
+  

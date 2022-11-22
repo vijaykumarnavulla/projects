@@ -1,0 +1,22 @@
+  
+  <div class="headerLeftPanel">
+				<img src="../../assets/img/menu-button.png" mat-button (click)="menuClick.emit($event)"/>&nbsp;&nbsp;
+				<img src="../../assets/img/Logo.png" />
+			   </div>
+  <div class="headerRightPanel">     
+    <ul>
+      <li><input type="text"  class="inputCls width250px" placeholder="Search"/></li>
+      <li class="headerSearch"><a ><img src="../../assets/img/Help_Icon.png" /></a></li>
+      <li class="headerSearch"><a ><img src="../../assets/img/Notification_Icon.png" /></a></li>
+      <li class="headerSearch"><a ><img src="../../assets/img/Comments_Icon.png" /></a></li>
+      <li class="headerSearch"><a class="mr" mat-button [matMenuTriggerFor]="menu">K</a></li>
+      <mat-menu #menu="matMenu">
+        <div class="account_menu">            
+                <p>Kurt Kneeshaw</p>
+                <p>kurt.kneeshaw@jda.com</p>            
+              <button mat-menu-item>Sign Out</button>
+        </div>        
+        </mat-menu>
+    </ul>
+  </div>
+ 

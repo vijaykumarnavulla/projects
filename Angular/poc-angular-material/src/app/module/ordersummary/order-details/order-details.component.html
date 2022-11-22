@@ -1,0 +1,177 @@
+<div class="container-div additionalInfoForm">
+    
+
+    <form [formGroup]="formGroup" (ngSubmit)="onSubmit(formGroup.value)" class="form" >
+          <div fxLayout="row" fxLayout.xs="column" fxFlexFill fxLayoutGap="15px">
+                <div fxLayout="column" fxFlex="33">
+                        <mat-form-field class="example-full-width">
+                            <mat-label class="mat-label-field">Order Number</mat-label>
+                            <input matInput  class="bg-transparente" formControlName="orderNumber"
+                            readonly>
+                      </mat-form-field>
+                        <mat-form-field class="example-full-width">
+                            <mat-label class="mat-label-field">Transaction Type</mat-label>
+                            <!-- <mat-select class="bg-transparente"
+                            (selectionChange)="selectionChanged($event)" 
+                            [attr.data-name]="transactionType" [formControlName]="'transactionType'"
+                             placeholder="Transaction Type">
+                             <mat-option *ngFor="let type of transactionType" [value]="type">
+                                    {{type.name}}
+                                  </mat-option>
+                                  </mat-select> -->
+                            <input matInput  class="bg-transparente"
+                                  formControlName="transactionType" readonly>
+                      </mat-form-field>
+                        <mat-form-field class="example-full-width select-field">
+                            <mat-label class="mat-label-field">Order Status</mat-label>
+                            <mat-select class="bg-transparente"
+                            (selectionChange)="selectionChanged($event)" 
+                            [attr.data-name]="orderStatus" [formControlName]="'orderStatus'"
+                             placeholder="Order Status">
+                             <mat-option *ngFor="let type of orderStatusTypes" [value]="type">
+                                    {{type.name}}
+                                  </mat-option>
+                                  </mat-select>
+                            <!-- <input matInput  class="bg-transparente" formControlName="orderStatus"> -->
+                      </mat-form-field>
+                        <mat-form-field class="example-full-width">
+                            <mat-label class="mat-label-field">Store Code</mat-label>
+                            <input matInput  class="bg-transparente" formControlName="storeCode" readonly>
+                      </mat-form-field>
+                        <mat-form-field class="example-full-width">
+                            <mat-label class="mat-label-field">Cash Drawer</mat-label>
+                            <input matInput  class="bg-transparente" formControlName="cashDrawer" readonly>
+                      </mat-form-field>
+                        <mat-form-field class="example-full-width">
+                            <mat-label class="mat-label-field">Salesperson 1</mat-label>
+                            <input matInput  class="bg-transparente"
+                                  formControlName="salerPerson_1">
+                      </mat-form-field>
+                        <mat-form-field class="example-full-width">
+                            <mat-label class="mat-label-field">Salesperson 2</mat-label>
+                            <input matInput  class="bg-transparente"
+                                  formControlName="salesPerson_2">
+                      </mat-form-field>
+                </div>
+                <div fxLayout="column" fxFlex="calc(33%-15px)">
+                      <div fxLayout="row" fxFlex="100" fxFlexAlign="start"
+                      style="width:100%;">
+                            <h5>SHIPPING INFORMATION</h5>
+                      </div>
+
+                        <mat-form-field class="example-full-width">
+                            <mat-label class="mat-label-field">Customer Code</mat-label>
+                            <input matInput  class="bg-transparente"
+                                  formControlName="shipBill_customerCode" readonly>
+                      </mat-form-field>
+                      <div fxLayout="row" fxLayoutGap="10px">
+                            <mat-form-field  class="example-full-width" fxFlex="50">
+                                  <mat-label class="mat-label-field">First Name</mat-label>
+                                  <input matInput  class="bg-transparente"
+                                        formControlName="shipBill_firstName">
+                            </mat-form-field>
+
+                            <mat-form-field  class="example-full-width" fxFlex="calc(50%-10px)">
+                                  <mat-label class="mat-label-field">Last Name</mat-label>
+                                  <input matInput  class="bg-transparente"
+                                        formControlName="shipBill_lastname">
+                            </mat-form-field>
+                      </div>
+
+
+                        <mat-form-field class="example-full-width">
+                            <mat-label class="mat-label-field">Address 1</mat-label>
+                            <input matInput  class="bg-transparente"
+                                  formControlName="shipBill_address_1">
+                      </mat-form-field>
+                        <mat-form-field class="example-full-width">
+                            <mat-label class="mat-label-field">Address 2</mat-label>
+                            <input matInput  class="bg-transparente"
+                                  formControlName="shipBill_address_2">
+                      </mat-form-field>
+
+                      <div fxLayout="row" fxLayoutGap="10px">
+                            <mat-form-field  class="example-full-width" fxFlex="33">
+                                  <mat-label class="mat-label-field">City</mat-label>
+                                  <input matInput  class="bg-transparente"
+                                        formControlName="shipBill_city">
+                            </mat-form-field>
+
+                            <mat-form-field  class="example-full-width" fxFlex="calc(33%-10px)">
+                                  <mat-label class="mat-label-field">State</mat-label>
+                                  <input matInput  class="bg-transparente"
+                                        formControlName="shipBill_state">
+                            </mat-form-field>
+                            <mat-form-field  class="example-full-width" fxFlex="calc(33%-10px)">
+                                  <mat-label class="mat-label-field">Zip Code</mat-label>
+                                  <input matInput  class="bg-transparente"
+                                        formControlName="shipBill_zipCode">
+                            </mat-form-field>
+                      </div>
+                      <div fxLayout="row">
+                            <mat-form-field  class="example-full-width" fxFlex="100">
+                                  <mat-label class="mat-label-field">Phone Number</mat-label>
+                                  <input matInput  class="bg-transparente"
+                                        formControlName="shipBill_phoneNumber">
+                            </mat-form-field>
+                      </div>
+                </div>
+                <div fxLayout="column" fxFlex="calc(33%-15px)">
+                      <div fxLayout="row" style="height: 65.313px;width:100%"  fxFlexAlign="start">
+                            <h5>BILLING INFORMATION</h5>
+                      </div>
+                      <div fxLayout="row" fxLayoutGap="10px">
+                            <mat-form-field  class="example-full-width" fxFlex="50">
+                                  <mat-label class="mat-label-field">First name</mat-label>
+                                  <input matInput  class="bg-transparente"
+                                        formControlName="billInfo_firstName">
+                            </mat-form-field>
+
+                            <mat-form-field  class="example-full-width" fxFlex="calc(50%-10px)">
+                                  <mat-label class="mat-label-field">Last Name</mat-label>
+                                  <input matInput  class="bg-transparente"
+                                        formControlName="billInfo_lastname">
+                            </mat-form-field>
+                      </div>
+
+
+                        <mat-form-field class="example-full-width">
+                            <mat-label class="mat-label-field">Address 1</mat-label>
+                            <input matInput  class="bg-transparente"
+                                  formControlName="billInfo_address_1">
+                      </mat-form-field>
+                        <mat-form-field class="example-full-width">
+                            <mat-label class="mat-label-field">Address 2</mat-label>
+                            <input matInput  class="bg-transparente"
+                                  formControlName="billInfo_address_2">
+                      </mat-form-field>
+
+                      <div fxLayout="row" fxLayoutGap="10px">
+                            <mat-form-field  class="example-full-width" fxFlex="33">
+                                  <mat-label class="mat-label-field">City</mat-label>
+                                  <input matInput  class="bg-transparente"
+                                        formControlName="billInfo_city">
+                            </mat-form-field>
+
+                            <mat-form-field  class="example-full-width" fxFlex="calc(33%-10px)">
+                                  <mat-label class="mat-label-field">State</mat-label>
+                                  <input matInput class="bg-transparente"
+                                        formControlName="billInfo_state">
+                            </mat-form-field>
+                            <mat-form-field  class="example-full-width" fxFlex="calc(33%-10px)">
+                                  <mat-label class="mat-label-field">Zip Code</mat-label>
+                                  <input matInput  class="bg-transparente"
+                                        formControlName="billInfo_zipCode">
+                            </mat-form-field>
+                      </div>
+                      <div fxLayout="row">
+                            <mat-form-field  class="example-full-width" fxFlex="100">
+                                  <mat-label class="mat-label-field">Phone Number</mat-label>
+                                  <input matInput  class="bg-transparente"
+                                        formControlName="billInfo_phoneNumber">
+                            </mat-form-field>
+                      </div>
+                </div>
+          </div>
+    </form>
+</div>
