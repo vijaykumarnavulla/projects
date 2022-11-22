@@ -40,5 +40,33 @@ describe('app comp describe', ()=>{
     fireEvent.click(div)
 
   })
+
+  // let url = '';
+  // let body = '';
+  // jest.mock("axios", ()=>({
+  //   post:jest.fn((_url,_body) =>{
+  //     return new Promise((resolve) => {
+  //       url = _url
+  //       body = _body
+  //       resolve(true)
+  //     })
+  //   })
+  // }))
+
+  // const renderweithcontext = (comp) =>{
+  //   return{
+  //     ...render(
+  //       <paycontext.provider value={JSON.parse(sampleJSON)}>
+  //         {comp}
+  //       </paycontext.provider>
+  //     )
+  //   }
+  // }
+  // renderweithcontext(<sampleComp/>);
+  // it('sample teste ', async()=>{
+  //   renderweithcontext(<sampleComp/>);
+  //   (axios.post as jest.MockedFunction<typeof axios.post>).mockReturnValueOnce(() =>
+  //   Promise.resolve(testJSONData));
+  // })
 })
 
