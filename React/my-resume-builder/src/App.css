@@ -1,0 +1,88 @@
+.html,.body{
+  margin:0px;
+  padding:0px;
+}
+.maindiv{
+  display: flex;
+}
+.sidebardiv{
+  background-color: #0000ff54;
+  width: 150px;
+  padding: 10px;
+  padding-top: 30px;
+  padding-left: 20px;
+}
+.focusdiv{
+  background-color: white;
+  width: calc(100% - 120px);
+  padding: 15px;
+}
+.locationdiv{
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background-image: linear-gradient(328deg, #8500ffe6 70%, #09f 70%  );
+  text-align: center;
+  display: inline-block;
+}
+.phonediv{
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background-image: linear-gradient(328deg, #8500ffe6 70%, #09f 70%  );
+  text-align: center;
+}
+.location_icon{
+  font-size: 20px;
+    padding-top: 8px;
+    color: white;
+}
+.skill_div{
+  display: block;
+  margin-bottom: 10px;
+}
+.compayspan{
+  font-size: 15px;
+  font-weight: 500;
+  margin: 5px;
+}
+.timespan{
+  font-size: 12px;
+  font-weight: 600;
+  padding-left: 15px;
+  margin: 5px;
+}
+.desigspan{
+  font-size: 18px;
+  font-weight: 500;
+  margin: 5px;
+}
+.projectdiv{
+  padding: 10px;
+}
+.divskills{
+  padding-left: 10px;
+}
+.skillMaindiv{
+  padding-top: 15px;
+}
+.skilleleactive{
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background-color: #8500ffe6;
+  display: inline-block;
+  margin: 2px;
+}
+.skilleleinactive{
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background-color: white;
+  display: inline-block;
+  margin:2px;
+}
+.sideicondiv{
+  margin-top: 25px;
+  scale: 0.9;
+}
