@@ -1,0 +1,85 @@
+.aboutus_heading {
+    height: 70px;
+    padding-left: 69px;
+    padding-top: 79px;
+    font-family: 'Exo 2';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 110%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #000000;
+}
+
+.aboutus_desc {
+    padding-top: 25px;
+    height: 40px;
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 110%;
+    display: flex;
+    align-items: center;
+    color: #000000;
+    padding-left: 69px;
+}
+
+.aboutus_item_main_div {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 10%;
+    row-gap: 75px;
+    padding-left: 69px;
+    margin-top: 30px;
+}
+
+.aboutus_div_items_rel {
+    position: relative;
+    height: 300px;
+}
+
+.aboutus_div_item_common {
+    width: 500px;
+    height: 300px;
+    border-radius: 25px;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.aboutus_div_item_box {
+    box-sizing: border-box;
+    width: 373px;
+    height: 100px;
+    background: linear-gradient(94.33deg, rgba(255, 255, 255, 0.6) 3.19%, rgba(255, 255, 255, 0.1) 99.26%);
+    backdrop-filter: blur(5px);
+    border-radius: 15px;
+    position: absolute;
+    top: 250px;
+    left: 50px;
+    padding-left: 25px;
+    padding-top: 10px;
+}
+
+.aboutus_p_5 {
+    padding: 5px;
+}
+
+.aboutus_flex_cg_5p {
+    column-gap: 8%;
+}
+
+.aboutus_div_title {
+    height: 26px;
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 110%;
+    display: flex;
+    align-items: center;
+    color: #000000;
+    padding-bottom: 5px;
+}

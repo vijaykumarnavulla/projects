@@ -1,0 +1,97 @@
+.explore_heading {
+    height: 70px;
+    padding-left: 69px;
+    padding-top: 79px;
+    font-family: 'Exo 2';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 110%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #000000;
+}
+
+.explore_desc {
+    padding-top: 25px;
+    height: 40px;
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 110%;
+    display: flex;
+    align-items: center;
+    color: #000000;
+    padding-left: 69px;
+}
+
+.explore_item_main_div {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 10%;
+    row-gap: 75px;
+    padding-left: 69px;
+    margin-top: 30px;
+}
+
+.explore_div_item_common {
+    width: 500px;
+    height: 300px;
+    border-radius: 25px;
+}
+
+.explore_div_item_box{
+    box-sizing: border-box;
+    width: 424px;
+    height: 100px;
+    background: linear-gradient(94.33deg, rgba(255, 255, 255, 0.6) 3.19%, rgba(255, 255, 255, 0.1) 99.26%);
+    backdrop-filter: blur(5px);
+    border-radius: 15px;
+    position: absolute;
+    top:250px;
+    left:50px;
+    padding-left: 25px;
+}
+
+.explore_div_items_rel{
+    position:relative;
+    height:300px;
+}
+
+.explore_div_price{
+width: 80px;
+height: 30px;
+background: linear-gradient(90deg, #FF594C 0%, #FAC527 100%);
+border-radius: 10px;
+text-align: center;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.explore_div_book_btn{
+width: 100px;
+height: 50px;
+background: linear-gradient(90deg, #FF594C 0%, #FAC527 100%);
+border-radius: 10px;
+text-align: center;
+margin: auto;
+display: flex;
+align-items: center;
+justify-content: center;
+cursor: pointer;
+}
+.explore_p_5{
+    padding: 5px;
+}
+.explore_flex_cg_5p{
+    display:flex;
+    column-gap:8%;
+}
+.explore_span_sup{
+    margin-top: -5px;
+    font-size: 11px;
+}
+
