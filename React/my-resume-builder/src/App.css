@@ -16,6 +16,7 @@
   background-color: white;
   width: calc(100% - 120px);
   padding: 15px;
+  margin-top: 88px;
 }
 .locationdiv{
   width: 35px;
@@ -85,4 +86,12 @@
 .sideicondiv{
   margin-top: 25px;
   scale: 0.9;
+}
+.div_title_name{
+  position: absolute;
+    top: 0px;
+    left: 181px;
+    width: Calc(100% - 205px);
+    padding: 10px;
+  background-image: repeating-linear-gradient(10deg, #0000ff17 0px 40px ,#ffa50029 40px 80px);
 }
