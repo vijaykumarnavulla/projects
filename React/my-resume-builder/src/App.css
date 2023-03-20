@@ -135,22 +135,20 @@
 .carrer-gap-desc {
   display: inline-block;
   width: 450px;
-  height: 50px;
 }
 
 .carrer-gap-fromto {
   display: inline-block;
   width: 120px;
-  height: 50px;
 }
 
 .carrer-gap-reason {
   position: relative;
   display: inline-block;
   width: 450px;
-  height: 50px;
-  background-image: linear-gradient(90deg, #8500ffe6 2px, white 2px);
-  padding-left: 10px;
+  background-image: linear-gradient(90deg, #8500ffe6 5px, #09f 5px 10px, white 10px);
+  padding-left: 20px;
+  padding-top: 10px;
 }
 
 

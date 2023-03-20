@@ -5,7 +5,7 @@ function CarrerGapComp() {
     useEffect(() => {
         let arr = [{
             desc: 'I.Post-graduate Degree AND Tarento', timespan: 'Jun-2008 to Sep-2010',
-            reason: 'Great Recession United States housing bubble in 2005-2012' //2 years, 3 months
+            reason: 'Great Recession United States housing bubble in 2005-2012' 
         },
         {
             desc: 'II.Tarento AND Tech Mahindra', timespan: 'Mar-2013 to Jul-2013',
