@@ -1,0 +1,115 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+h3 {
+  color: white;
+  font-size: 95%;
+}
+
+.maindiv {
+  display: flex;
+  padding: 10px;
+}
+
+.div1 {
+  margin: 10px;
+  width: 300px;
+  height: 300px;
+  background: linear-gradient(0deg, orange 33%, white 33% 66%, blue 66%);
+}
+.div1::after {
+  margin: 10px;
+  width: 300px;
+  height: 300px;
+  background: linear-gradient(0deg, rgb(50, 221, 78) 33%, rgb(74, 23, 214) 33% 66%, blue 66%);
+}
+
+.div2 {
+  margin: 10px;
+  width: 300px;
+  height: 300px;
+  background: repeating-linear-gradient(0deg, red 0px 40px, green 40px 80px, blue 80px 120px)
+}
+.div3{
+  margin: 10px;
+  width: 300px;
+  height: 300px;
+  background:linear-gradient(360deg, rgb(226, 163, 163) 0% 33%,transparent 40%,rgb(126, 10, 10) 33% 66%,rgb(19, 4, 4) 100%),
+   linear-gradient(0deg, orange 33%,grey 33% 66%, blue 66%);
+}
+.radial_div {
+  display: flex;
+  padding: 10px;
+}
+
+.radial1 {
+  margin: 10px;
+  width: 300px;
+  height: 400px;
+  background: radial-gradient(ellipse at 50% 50%, red 40px, green 40px 80px, yellow 80px);
+  border-radius: 50%;
+}
+
+.radial2 {
+  margin: 10px;
+  width: 300px;
+  height: 400px;
+  background: radial-gradient(circle at 50% 50%, blue 80px,yellow 80px 140px,pink 140px);
+  border-radius: 50%;
+}
+.radial3{
+  margin: 10px;
+  width: 300px;
+  height: 300px;
+  background: repeating-radial-gradient(circle at 50% 50%, blue 0px 30px,yellow 30px 50px,pink 50px 80px);
+  border-radius: 50%;
+}
+.radial3 h3{
+  padding-top:  calc(50% - 20px);
+}
+.conic_div{
+  display: flex;
+  padding: 10px;
+}
+.conic1 {
+  margin: 10px;
+  width: 300px;
+  height: 300px;
+  background: radial-gradient(circle at 50% 50%,white 40%,transparent 40%),
+  conic-gradient(red 40deg,yellow 40deg 70deg,green 70deg);
+  border-radius: 50%;
+}
+.conic21{
+  margin: 10px;
+  width: 300px;
+  height: 300px;
+  background: conic-gradient(red 0.2turn,blue 0.2turn 0.5turn,yellow 0.5turn 1turn);
+  border-radius: 50%;
+}

@@ -1,73 +1,88 @@
-.html,.body{
-  margin:0px;
-  padding:0px;
+.html,
+.body {
+  margin: 0px;
+  padding: 0px;
 }
-.maindiv{
+
+.maindiv {
   display: flex;
 }
-.sidebardiv{
+
+.sidebardiv {
   background-color: #0000ff54;
   width: 150px;
   padding: 10px;
   padding-top: 30px;
   padding-left: 20px;
 }
-.focusdiv{
+
+.focusdiv {
   background-color: white;
   width: calc(100% - 120px);
   padding: 15px;
   margin-top: 88px;
 }
-.locationdiv{
+
+.locationdiv {
   width: 35px;
   height: 35px;
   border-radius: 50%;
-  background-image: linear-gradient(328deg, #8500ffe6 70%, #09f 70%  );
+  background-image: linear-gradient(328deg, #8500ffe6 70%, #09f 70%);
   text-align: center;
   display: inline-block;
 }
-.phonediv{
+
+.phonediv {
   width: 35px;
   height: 35px;
   border-radius: 50%;
-  background-image: linear-gradient(328deg, #8500ffe6 70%, #09f 70%  );
+  background-image: linear-gradient(328deg, #8500ffe6 70%, #09f 70%);
   text-align: center;
 }
-.location_icon{
+
+.location_icon {
   font-size: 20px;
-    padding-top: 8px;
-    color: white;
+  padding-top: 8px;
+  color: white;
 }
-.skill_div{
+
+.skill_div {
   display: block;
   margin-bottom: 10px;
 }
-.compayspan{
+
+.compayspan {
   font-size: 15px;
   font-weight: 500;
   margin: 5px;
 }
-.timespan{
+
+.timespan {
   font-size: 12px;
   font-weight: 600;
   padding-left: 15px;
   margin: 5px;
 }
-.desigspan{
+
+.desigspan {
   font-size: 18px;
   font-weight: 500;
   margin: 5px;
 }
-.projectdiv{
+
+.projectdiv {
   padding: 10px;
 }
-.divskills{
+
+.divskills {
   padding-left: 10px;
 }
-.skillMaindiv{
+
+.skillMaindiv {
   padding-top: 15px;
 }
-.skilleleactive{
+
+.skilleleactive {
   width: 14px;
   height: 14px;
   border-radius: 50%;
@@ -75,23 +90,108 @@
   display: inline-block;
   margin: 2px;
 }
-.skilleleinactive{
+
+.skilleleinactive {
   width: 14px;
   height: 14px;
   border-radius: 50%;
   background-color: white;
   display: inline-block;
-  margin:2px;
+  margin: 2px;
 }
-.sideicondiv{
+
+.sideicondiv {
   margin-top: 25px;
   scale: 0.9;
 }
-.div_title_name{
+
+.div_title_name {
   position: absolute;
-    top: 0px;
-    left: 181px;
-    width: Calc(100% - 205px);
-    padding: 10px;
-  background-image: repeating-linear-gradient(10deg, #0000ff17 0px 40px ,#ffa50029 40px 80px);
+  top: 0px;
+  left: 181px;
+  width: Calc(100% - 205px);
+  padding: 10px;
+  background-image: repeating-linear-gradient(10deg, #0000ff17 0px 40px, #ffa50029 40px 80px);
+}
+
+.div_eduction_marks {
+  margin-left: 20px;
+  display: inline-block;
+  width: 150px;
+  height: 20px;
+  border: 1px solid grey;
+  position: relative;
+  color: black;
+  text-align: right;
+  top: 2px;
+}
+
+.span_eductio_passout {
+  font-size: 14px;
+  color: grey;
+  font-weight: 600;
+}
+
+.carrer-gap-desc {
+  display: inline-block;
+  width: 450px;
+  height: 50px;
+}
+
+.carrer-gap-fromto {
+  display: inline-block;
+  width: 120px;
+  height: 50px;
+}
+
+.carrer-gap-reason {
+  position: relative;
+  display: inline-block;
+  width: 450px;
+  height: 50px;
+  background-image: linear-gradient(90deg, #8500ffe6 2px, white 2px);
+  padding-left: 10px;
+}
+
+
+
+.carre-gap-time-span {
+  font-size: 14px;
+  color: grey;
+  font-weight: 600;
+  padding-left: 15px;
+  
+}
+
+.carrer-gap-main-div {
+  margin: 10px;
+}
+.carrer-d-f{
+  display: flex;
+}
+
+.gradient {
+  background: conic-gradient(from 90deg at 50% 50%, #f00 0%, #00f 100%);
+  position: relative;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+
+.gradient::after {
+  content: "50%";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 24px;
+  color: white;
+}
+.carrer-gap-canon-gra {
+  display: inline-block;
+  background-image: conic-gradient(red 45deg, yellow 90deg, green 210deg);
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  margin: auto;
 }
