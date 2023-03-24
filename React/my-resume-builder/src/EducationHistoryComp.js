@@ -10,7 +10,7 @@ function EducationHistoryComp() {
             },
             {
                 school: 'Aurora Degree College', location: 'Warangal — B.sc (M.E.CS)',
-                passoutUniver: 'May 2005 - May 2008 , Affiliated Osmania University', marks: '60', white: '40'
+                passoutUniver: 'May 2002 - May 2005 , Affiliated Osmania University', marks: '60', white: '40'
             },
             {
                 school: 'Nava Vigayna Bharathi Jr. College', location: 'Warangal — M.P.C',

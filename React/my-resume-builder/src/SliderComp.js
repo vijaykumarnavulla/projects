@@ -35,7 +35,7 @@ function SliderComp() {
               </span>
             </div>
             <span style={{ paddingTop: '6px', paddingLeft: '3px' }}>Awards </span>
-            <span style={{ paddingTop: '6px', display: 'block', whiteSpace: 'nowrap' }}> Virtusa Spot Mar 2020</span>
+            <span style={{ paddingTop: '6px', display: 'block', whiteSpace: 'nowrap' }}> Virtusa Spot Mar 2021</span>
             <span style={{ paddingTop: '6px', display: 'block' }}>Tarento Appreciation</span>
           </div>
      </>
