@@ -4,7 +4,7 @@ function WorkhistoryComp() {
 const [workhistory, setWorkhistory] = useState([]);
 useEffect(() => {
   let history = [{
-    designation: 'Lead Consultant', company: 'Virtusa - polaris, Hyderabad', timespan: '2020-20-03 to till date',
+    designation: 'Lead Consultant', company: 'Virtusa - polaris, Hyderabad', timespan: '2020-20-03 to 2023-04-04',
     projects: [`I.CXO-billpay — JPMC 
     CXO ui is a banking application, which is having several modules, in which we are working on bill pay module its having banking add payee and remove payee and see details and request info, it’s basically monolith application  we divided that monolith application into microapp so each modules we are separated micro app and combined to the main app.
     `, `II.ESG - JPMC, Environment Social and Governance : This is new requirement under TAD seal for enabling users to create various combinations of Product under ESG based on available selections and getting approval for them if neede.

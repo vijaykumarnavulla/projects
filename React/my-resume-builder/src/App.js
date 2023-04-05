@@ -21,7 +21,7 @@ function App() {
     <div className="App">
 
       <div className='maindiv'>
-        <div className='sidebardiv'>
+        <div className='sidebardiv' id='sidebardiv'>
           <SliderComp></SliderComp>
           <SliderSkill></SliderSkill>
         </div>

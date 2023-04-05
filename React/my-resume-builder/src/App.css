@@ -119,7 +119,7 @@
   display: inline-block;
   width: 150px;
   height: 20px;
-  border: 1px solid grey;
+  border: 1px solid #333;
   position: relative;
   color: black;
   text-align: right;
@@ -128,7 +128,7 @@
 
 .span_eductio_passout {
   font-size: 14px;
-  color: grey;
+  color: #333;
   font-weight: 600;
 }
 
@@ -155,7 +155,7 @@
 
 .carre-gap-time-span {
   font-size: 14px;
-  color: grey;
+  color: #333;
   font-weight: 600;
   padding-left: 15px;
   

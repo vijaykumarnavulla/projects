@@ -9,11 +9,11 @@ function CarrerGapComp() {
         },
         {
             desc: 'II.Tarento AND Tech Mahindra', timespan: 'Mar-2013 to Jul-2013',
-            reason: 'Freelancig, Project work , Career transition'
+            reason: 'Career transition'
         },
         {
             desc: 'III.Tech Mahindra AND Crown Solutions India Pvt Ltd', timespan: 'Sep-2015 to Dec-2015',
-            reason: 'Taking break for marriage'
+            reason: 'Company lay offs'
         },
         {
             desc: 'IV.Crown Solutions India Pvt Ltd AND Tech Mahindra', timespan: 'Jul-2016 to Sep-2016 ',
