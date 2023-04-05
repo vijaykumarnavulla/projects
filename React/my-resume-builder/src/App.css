@@ -3,7 +3,10 @@
   margin: 0px;
   padding: 0px;
 }
-
+.projectTimediv{
+  font-weight: 500;
+  color: #333;
+}
 .maindiv {
   display: flex;
 }
