@@ -1,0 +1,76 @@
+{
+  "expo": {
+    "name": "sonyTV Remote",
+    "slug": "vkn-sonytv-remote",
+    "version": "1.0.0",
+    "owner": "vkn607258",
+    "orientation": "portrait",
+    "icon": "./assets/images/icon.png",
+    "scheme": "myapp",
+    "userInterfaceStyle": "automatic",
+    "newArchEnabled": true,
+    "splash": {
+      "image": "./assets/images/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff",
+      "dark": {
+        "image": "./assets/images/splash-icon.png",
+        "backgroundColor": "#000000"
+      }
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "updates": {
+      "enabled": true,
+      "fallbackToCacheTimeout": 0
+    },
+    "ios": {
+      "entitlements": {
+        "com.apple.developer.networking.multicast": true
+      },
+      "infoPlist": {
+        "NSLocalNetworkUsageDescription": "This app needs access to find devices on your local network to connect to your Sony TV.",
+        "NSBonjourServices": [
+          "_services._dns-sd._udp"
+        ]
+      },
+      "supportsTablet": true,
+      "bundleIdentifier": "com.vkn.sonytv.remote"
+    },
+    "android": {
+      "package": "com.vkn.sonytv.remote",
+      "permissions": [
+        "INTERNET",
+        "ACCESS_NETWORK_STATE",
+        "CHANGE_WIFI_STATE",
+        "ACCESS_WIFI_STATE",
+        "CHANGE_WIFI_MULTICAST_STATE"
+      ],
+      "usesCleartextTraffic": true,
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/images/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      }
+    },
+    "web": {
+      "bundler": "metro",
+      "output": "static",
+      "favicon": "./assets/images/favicon.png"
+    },
+    "plugins": [
+      "expo-router"
+    ],
+    "experiments": {
+      "typedRoutes": true
+    },
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "7d2b3073-8952-4d6e-a662-d092baa698ce"
+      }
+    }
+  }
+}

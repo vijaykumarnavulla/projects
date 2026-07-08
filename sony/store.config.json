@@ -1,0 +1,20 @@
+{
+  "apple": {
+    "name": "Remote control for Sony TV",
+    "description": "This app is not the official Sony app. It is developed independently to provide remote control functionality for Sony TVs. Enjoy seamless control of your Sony television with this user-friendly remote app.",
+    "keywords": ["sonytvRemote", "iphone", "ios"],
+    "screenshots": [
+      "./assets/screenshots/ios-1.png",
+      "./assets/screenshots/ios-2.png"
+    ]
+  },
+  "google": {
+    "name": "Remote control for Sony TV",
+    "fullDescription": "This app is not the official Sony app. It is developed independently to provide remote control functionality for Sony TVs. Enjoy seamless control of your Sony television with this user-friendly remote app.",
+    "shortDescription": "Remote control for Sony TV",
+    "screenshots": [
+      "./assets/screenshots/android-1.png",
+      "./assets/screenshots/android-2.png"
+    ]
+  }
+}

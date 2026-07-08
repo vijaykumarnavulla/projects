@@ -1,0 +1,172 @@
+{
+    "result": [
+        [
+            {
+                "title": "Play Store",
+                "uri": "com.sony.dtv.com.android.vending.com.google.android.finsky.tvmainactivity.TvMainActivity",
+                "icon": "http:\/\/192.168.0.100\/DIAL\/icon\/com.sony.dtv.com.android.vending.com.google.android.finsky.tvmainactivity.TvMainActivity.png"
+            },
+            {
+                "title": "YouTube",
+                "uri": "com.sony.dtv.com.google.android.youtube.tv.com.google.android.apps.youtube.tv.activity.ShellActivity",
+                "icon": "http:\/\/192.168.0.100\/DIAL\/icon\/com.sony.dtv.com.google.android.youtube.tv.com.google.android.apps.youtube.tv.activity.ShellActivity.png"
+            },
+            {
+                "title": "YouTube Music",
+                "uri": "com.sony.dtv.com.google.android.youtube.tvmusic.com.google.android.apps.youtube.tvmusic.activity.MainActivity",
+                "icon": "http:\/\/192.168.0.100\/DIAL\/icon\/com.sony.dtv.com.google.android.youtube.tvmusic.com.google.android.apps.youtube.tvmusic.activity.MainActivity.png"
+            },
+            {
+                "title": "Music",
+                "uri": "com.sony.dtv.com.sony.dtv.osat.music.com.sonyericsson.music.MusicActivity",
+                "icon": "http:\/\/192.168.0.100\/DIAL\/icon\/com.sony.dtv.com.sony.dtv.osat.music.com.sonyericsson.music.MusicActivity.png"
+            },
+            {
+                "title": "Media Player",
+                "uri": "com.sony.dtv.com.sony.dtv.smartmediaapp.com.sony.dtv.smartmediaapp.MainActivity",
+                "icon": "http:\/\/192.168.0.100\/DIAL\/icon\/com.sony.dtv.com.sony.dtv.smartmediaapp.com.sony.dtv.smartmediaapp.MainActivity.png"
+            },
+            {
+                "title": "TV",
+                "uri": "com.sony.dtv.com.sony.dtv.tvx.com.sony.dtv.tvx.MainActivity",
+                "icon": "http:\/\/192.168.0.100\/DIAL\/icon\/com.sony.dtv.com.sony.dtv.tvx.com.sony.dtv.tvx.MainActivity.png"
+            },
+            {
+                "title": "Programme Guide",
+                "uri": "com.sony.dtv.com.sony.dtv.tvxlauncher.programguide.com.sony.dtv.tvxlauncher.programguide.MainActivity",
+                "icon": "http:\/\/192.168.0.100\/DIAL\/icon\/com.sony.dtv.com.sony.dtv.tvxlauncher.programguide.com.sony.dtv.tvxlauncher.programguide.MainActivity.png"
+            },
+            {
+                "title": "SmartTube",
+                "uri": "com.sony.dtv.com.teamsmart.videomanager.tv.com.liskovsoft.smartyoutubetv2.tv.ui.main.SplashActivity",
+                "icon": "http:\/\/192.168.0.100\/DIAL\/icon\/com.sony.dtv.com.teamsmart.videomanager.tv.com.liskovsoft.smartyoutubetv2.tv.ui.main.SplashActivity.png"
+            },
+            {
+                "title": "Prime Video",
+                "uri": "com.sony.dtv.com.amazon.amazonvideo.livingroom.com.amazon.ignition.IgnitionActivity",
+                "icon": "http:\/\/192.168.0.100\/DIAL\/icon\/com.sony.dtv.com.amazon.amazonvideo.livingroom.com.amazon.ignition.IgnitionActivity.png"
+            },
+            {
+                "title": "Play Movies",
+                "uri": "com.sony.dtv.com.google.android.videos.com.google.android.videos.tv.presenter.activity.TvLauncherActivity",
+                "icon": "http:\/\/192.168.0.100\/DIAL\/icon\/com.sony.dtv.com.google.android.videos.com.google.android.videos.tv.presenter.activity.TvLauncherActivity.png"
+            },
+            {
+                "title": "Netflix",
+                "uri": "com.sony.dtv.com.netflix.ninja.com.netflix.ninja.MainActivity",
+                "icon": "http:\/\/192.168.0.100\/DIAL\/icon\/com.sony.dtv.com.netflix.ninja.com.netflix.ninja.MainActivity.png"
+            },
+            {
+                "title": "Help",
+                "uri": "com.sony.dtv.com.sony.dtv.smarthelp.com.sony.dtv.smarthelp.activity.MainActivity",
+                "icon": "http:\/\/192.168.0.100\/DIAL\/icon\/com.sony.dtv.com.sony.dtv.smarthelp.com.sony.dtv.smarthelp.activity.MainActivity.png"
+            },
+            {
+                "title": "TV Control Setup with Amazon Alexa",
+                "uri": "com.sony.dtv.com.sony.dtv.smarthomesettings.com.sony.dtv.smarthomesettings.activity.MainActivity",
+                "icon": "http:\/\/192.168.0.100\/DIAL\/icon\/com.sony.dtv.com.sony.dtv.smarthomesettings.com.sony.dtv.smarthomesettings.activity.MainActivity.png"
+            },
+            {
+                "title": "Sony Select",
+                "uri": "com.sony.dtv.com.sony.dtv.sonyselect.com.sony.dtv.sonyselect.activities.LaunchActivity",
+                "icon": "http:\/\/192.168.0.100\/DIAL\/icon\/com.sony.dtv.com.sony.dtv.sonyselect.com.sony.dtv.sonyselect.activities.LaunchActivity.png"
+            },
+            {
+                "title": "Timers",
+                "uri": "com.sony.dtv.com.sony.dtv.timers.com.sony.dtv.activity.TimersMainActivity",
+                "icon": "http:\/\/192.168.0.100\/DIAL\/icon\/com.sony.dtv.com.sony.dtv.timers.com.sony.dtv.activity.TimersMainActivity.png"
+            },
+            {
+                "title": "Internet Browser",
+                "uri": "com.sony.dtv.com.vewd.core.integration.dia.com.vewd.core.integration.dia.SonyBrowserUiActivity",
+                "icon": "http:\/\/192.168.0.100\/DIAL\/icon\/com.sony.dtv.com.vewd.core.integration.dia.com.vewd.core.integration.dia.SonyBrowserUiActivity.png"
+            },
+            {
+                "title": "Screen mirroring",
+                "uri": "com.sony.dtv.screnmirroring.com.screnmirroring.com.StartScreenMirroringHomeActivity",
+                "icon": "http:\/\/192.168.0.100\/DIAL\/icon\/com.sony.dtv.screnmirroring.com.screnmirroring.com.StartScreenMirroringHomeActivity.png"
+            },
+            {
+                "title": "aha",
+                "uri": "com.sony.dtv.ahaflix.tv.ahaflix.tv.MainActivity",
+                "icon": "http:\/\/192.168.0.100\/DIAL\/icon\/com.sony.dtv.ahaflix.tv.ahaflix.tv.MainActivity.png"
+            },
+            {
+                "title": "WiFi File Explorer",
+                "uri": "com.sony.dtv.com.dooblou.WiFiFileExplorer.com.dooblou.WiFiFileExplorerLib.Start",
+                "icon": "http:\/\/192.168.0.100\/DIAL\/icon\/com.sony.dtv.com.dooblou.WiFiFileExplorer.com.dooblou.WiFiFileExplorerLib.Start.png"
+            },
+            {
+                "title": "Etv Win",
+                "uri": "com.sony.dtv.com.etvwin.androidtv.com.etvwin.androidtv.ui.LandingPage.activity.MainActivity",
+                "icon": "http:\/\/192.168.0.100\/DIAL\/icon\/com.sony.dtv.com.etvwin.androidtv.com.etvwin.androidtv.ui.LandingPage.activity.MainActivity.png"
+            },
+            {
+                "title": "Etv Win",
+                "uri": "com.sony.dtv.com.etvwin.androidtv.com.etvwin.androidtv.ui.Playback.PlaybackActivity",
+                "icon": "http:\/\/192.168.0.100\/DIAL\/icon\/com.sony.dtv.com.etvwin.androidtv.com.etvwin.androidtv.ui.Playback.PlaybackActivity.png"
+            },
+            {
+                "title": "Play Music",
+                "uri": "com.sony.dtv.com.google.android.music.com.google.android.music.tv.HomeActivity",
+                "icon": "http:\/\/192.168.0.100\/DIAL\/icon\/com.sony.dtv.com.google.android.music.com.google.android.music.tv.HomeActivity.png"
+            },
+            {
+                "title": "ZEE5",
+                "uri": "com.sony.dtv.com.graymatrix.did.com.zee5.android.launch.presentation.AppStartActivity",
+                "icon": "http:\/\/192.168.0.100\/DIAL\/icon\/com.sony.dtv.com.graymatrix.did.com.zee5.android.launch.presentation.AppStartActivity.png"
+            },
+            {
+                "title": "File Manager",
+                "uri": "com.sony.dtv.com.hitv.explore.com.hitv.explore.ExploreActivity",
+                "icon": "http:\/\/192.168.0.100\/DIAL\/icon\/com.sony.dtv.com.hitv.explore.com.hitv.explore.ExploreActivity.png"
+            },
+            {
+                "title": "Pluralsight",
+                "uri": "com.sony.dtv.com.pluralsight.com.pluralsight.android.learner.launch.LaunchActivity",
+                "icon": "http:\/\/192.168.0.100\/DIAL\/icon\/com.sony.dtv.com.pluralsight.com.pluralsight.android.learner.launch.LaunchActivity.png"
+            },
+            {
+                "title": "Internet Speed Test",
+                "uri": "com.sony.dtv.com.rma.speedtesttv.com.rma.speedtesttv.ui.SplashActivity",
+                "icon": "http:\/\/192.168.0.100\/DIAL\/icon\/com.sony.dtv.com.rma.speedtesttv.com.rma.speedtesttv.ui.SplashActivity.png"
+            },
+            {
+                "title": "TV Work With Alexa",
+                "uri": "com.sony.dtv.com.smartdevice.tvworkwithalexa.com.android.partner.tvworkwithalexa.ui.AppSplashActivity",
+                "icon": "http:\/\/192.168.0.100\/DIAL\/icon\/com.sony.dtv.com.smartdevice.tvworkwithalexa.com.android.partner.tvworkwithalexa.ui.AppSplashActivity.png"
+            },
+            {
+                "title": "My BRAVIA",
+                "uri": "com.sony.dtv.com.sony.dtv.promos.com.sony.dtv.promos.MainActivity",
+                "icon": "http:\/\/192.168.0.100\/DIAL\/icon\/com.sony.dtv.com.sony.dtv.promos.com.sony.dtv.promos.MainActivity.png"
+            },
+            {
+                "title": "Sun NXT",
+                "uri": "com.sony.dtv.com.suntv.sunnxt.com.androidtv.myplex.ui.activity.SPlashActivity",
+                "icon": "http:\/\/192.168.0.100\/DIAL\/icon\/com.sony.dtv.com.suntv.sunnxt.com.androidtv.myplex.ui.activity.SPlashActivity.png"
+            },
+            {
+                "title": "TrueConf",
+                "uri": "com.sony.dtv.com.trueconf.videochat.com.trueconf.gui.activities.Splash",
+                "icon": "http:\/\/192.168.0.100\/DIAL\/icon\/com.sony.dtv.com.trueconf.videochat.com.trueconf.gui.activities.Splash.png"
+            },
+            {
+                "title": "Notifications for Android TV",
+                "uri": "com.sony.dtv.de.cyberdream.androidtv.notifications.google.de.cyberdream.smarttv.leanback.MainActivityLeanBack",
+                "icon": "http:\/\/192.168.0.100\/DIAL\/icon\/com.sony.dtv.de.cyberdream.androidtv.notifications.google.de.cyberdream.smarttv.leanback.MainActivityLeanBack.png"
+            },
+            {
+                "title": "Hotstar",
+                "uri": "com.sony.dtv.in.startv.hotstar.com.hotstar.MainActivity",
+                "icon": "http:\/\/192.168.0.100\/DIAL\/icon\/com.sony.dtv.in.startv.hotstar.com.hotstar.MainActivity.png"
+            },
+            {
+                "title": "Nova Video Player",
+                "uri": "com.sony.dtv.org.courville.nova.com.archos.mediacenter.video.leanback.MainActivityLeanback",
+                "icon": "http:\/\/192.168.0.100\/DIAL\/icon\/com.sony.dtv.org.courville.nova.com.archos.mediacenter.video.leanback.MainActivityLeanback.png"
+            }
+        ]
+    ],
+    "id": 1
+}

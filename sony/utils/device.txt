@@ -1,0 +1,86 @@
+import React, { useState } from 'react';
+import { View, Text, TextInput, Button, Alert } from 'react-native';
+
+const BraviaTV = () => {
+  const [code, setCode] = useState('');
+  const [authStatus, setAuthStatus] = useState('');
+
+  const authenticate = async () => {
+    try {
+      const response = await authenticateDevice(code);
+      setAuthStatus(response);
+    } catch (error) {
+      Alert.alert('Error', error.message);
+    }
+  };
+
+  const authenticateDevice = async (code) => {
+    const headers = {
+      'Content-Type': 'application/json',
+    };
+
+    if (code) {
+      headers['Authorization'] = 'Basic ' + Buffer.from(':' + code).toString('base64');
+    }
+
+    const body = JSON.stringify({
+      id: 1,
+      method: 'actRegister',
+      version: '1.0',
+      params: [
+        {
+          clientid: 'tinkerhub',
+          nickname: 'Tinkerhub',
+          level: 'private',
+        },
+        [
+          {
+            value: 'yes',
+            function: 'WOL',
+          },
+        ],
+      ],
+    });
+
+    const response = await fetch(`${services.scalar}/accessControl`, {
+      method: 'POST',
+      headers,
+      body,
+    });
+
+    if (response.status !== 200) {
+      if (!code) {
+        return 'Call authenticate with code displayed on TV';
+      }
+
+      throw new Error('Unable to authenticate, the wrong code was probably entered');
+    }
+
+    const cookie = response.headers.get('Set-Cookie');
+    if (cookie) {
+      const cookieValue = cookie.split(';')[0];
+      // Store the cookie value in AsyncStorage or any other storage mechanism
+      return 'Authenticated with TV';
+    }
+
+    return 'Call authenticate with code displayed on TV';
+  };
+
+  return (
+    <View>
+      <Text>Enter the code displayed on your Sony TV:</Text>
+      <TextInput
+        value={code}
+        onChangeText={setCode}
+        placeholder="Enter code"
+        style={{ borderWidth: 1, borderColor: 'gray', padding: 10, marginVertical: 10 }}
+      />
+      <Button title="Authenticate" onPress={authenticate} />
+      <Text>{authStatus}</Text>
+    </View>
+  );
+};
+
+export default BraviaTV;
+
+'http://192.168.1.100/scalar'
