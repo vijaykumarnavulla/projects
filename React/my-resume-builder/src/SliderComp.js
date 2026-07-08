@@ -6,7 +6,7 @@ function SliderComp() {
               <span className='fa-solid fa-location-dot location_icon'>
               </span>
             </div>
-            <span style={{ paddingTop: '6px', paddingLeft: '3px' }}>karimnagar,</span><span style={{ paddingTop: '6px', display: 'block' }}> india, 505001</span>
+            <span style={{ paddingTop: '6px', paddingLeft: '3px' }}>Hyderabad,</span><span style={{ paddingTop: '6px', display: 'block' }}> india, 505001</span>
           </div>
           <div style={{ display: 'inline', marginTop: '13px' }}>
             <div className='locationdiv sideicondiv'>
