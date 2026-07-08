@@ -6,5 +6,5 @@ node_modules
 dist/
 node_modules/
 expo-env.d.ts
-android_keypath.json
+# android_keypath.json
 # @end expo-cli
